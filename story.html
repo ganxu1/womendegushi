@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的故事</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-image: url("img/背景.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: rgba(0,0,0,0.25);
+            padding: 30px 15px;         
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+        .item {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto 35px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+        }
+        .item video {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+        .desc-text {
+            width: 100%;
+            margin-top: 12px;
+            padding: 10px;
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+        .music-icon{
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 36px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index:99;
+        }
+        .music-icon:hover{
+            transform: scale(1.15);
+        }
+        .tip-box{
+            position: absolute;
+            top: 80px;
+            right: 40px;
+            background: #ffffff;
+            color: #333;
+            padding:14px 18px;
+            border-radius:8px;
+            width: 220px;
+            z-index:99;
+            box-shadow: 0 2px 10px #00000022;
+        }
+        .tip-box::after{
+            content:"";
+            position:absolute;
+            top:-12px;
+            right:20px;
+            border-width:0 12px 12px 12px;
+            border-style:solid;
+            border-color:transparent transparent #ffffff transparent;
+        }
+        .tip-text{
+            font-size:16px;
+            margin-bottom:12px;
+            text-align:center;
+        }
+        .tip-btn{
+            display:block;
+            width:100%;
+            padding:6px 0;
+            background:#4466ff;
+            color:#fff;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:15px;
+        }
+        .tip-btn:hover{
+            background:#2b4cdb;
+        }
+        .a{
+        	color: #FFFFFF;
+        }
+        /* 留言卡片样式 */
+        .input-card{
+            width:90%;
+            max-width:500px;
+            margin:60px auto 40px;
+            padding:20px;
+            background:#ffffffdd;
+            border-radius:10px;
+            box-shadow:0 2px 8px #ddd;
+        }
+        .input-card .title{
+            font-size:18px;
+            color:#333;
+            margin-bottom:15px;
+            text-align:center;
+        }
+        #userText{
+            width:100%;
+            min-height:120px;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:16px;
+            resize:vertical;
+        }
+        #submitBtn{
+            margin-top:15px;
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:8px;
+            background:#4466ff;
+            color:#fff;
+            font-size:16px;
+            cursor:pointer;
+        }
+        #submitBtn:hover{
+            background:#2b4cdb;
+        }
+        .c{
+        	color: aqua;
+        }
+        /*访客计数文字样式*/
+        .visitor-count{
+            width:90%;
+            max-width:500px;
+            margin: 20px auto;
+            text-align:center;
+            color:#ffffff66;
+            font-size:12px;
+        }
+    </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?00fb3aa45804a5edd60a4546182fd26f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+    <h1 class="a">我们的故事</h1>
+    <p class="a">其实我一直在窥探你的生活，用我的小号去看你的朋友圈，看看今天有没有更新，看看今天又分享了怎样的生活，时不时的打开地图看看你在哪里，其实那天我把你删了只是我一气之下仅删除了好友，那些美好的聊天记录我都留着，关于你的一切我都留着，我真的太拧巴了，但是我真的放不下，真的不放心，我怕你吃不好饭，睡不好觉，冬天到了怕你冻着，怕你受委屈无人倾诉，实在是没办法了才写下这些，希望你耐心看完，最后有一个输入框，有什么想说的你可以在里边输入并提交，我会收到的</p>
+    <!-- 第1张 -->
+    <div class="item">
+        <img src="img/1.jpg" alt="照片1">
+        <p class="desc-text">这是我们第一次出省旅游，没有计划没有攻略，只规划了路线，在一座陌生的城市里我们的彼此陪伴成了克服困难的良药，这首音乐也是当时在那里听的，每当听到这首歌我都会想起那个时候，从那开始我便开始幻想着我们的以后</p>
+    </div>
+    <!-- 第2张 -->
+    <div class="item">
+        <img src="img/2.jpg" alt="照片2">
+        <p class="desc-text">这是我们第二次出省去旅游，去看了玄武湖、鸡鸣寺、总统府，虽然鸡鸣寺的樱花落了，但在玄武湖也看到了些许樱花，我拍不出你想要的照片，虽然产生了以些小矛盾，但我已经看到了最美丽的樱花了，她一直跟在我身后，我也时不时的偷偷回头看一眼，我也害怕把那颗樱花给弄丢了</p>
+    </div>
+    <!-- 第3张 -->
+    <div class="item">
+        <img src="img/3.jpg" alt="照片3">
+        <p class="desc-text">这张是你陪我打完黑猴的最后一个篇章，结局的CG是悟空再一次带上了金箍又重新踏入了轮回，即第二轮回的开始，同时也见证了我们新篇章的开始</p>
+    </div>
+    <!-- 第4张 -->
+    <div class="item">
+        <img src="img/4.jpg" alt="照片4">
+        <p class="desc-text">这是我们的证件照，好像结婚的照片一样，我多么期盼着咱们以后能把这张照片放在结婚证上，与你拥有一个完整的家，照顾你的衣食起居，期望着与你白头偕老</p>
+    </div>
+    <!-- 第5张 -->
+    <div class="item">
+        <img src="img/5.png" alt="照片5">
+        <p class="desc-text">24年11月17，我们一千天纪念日，我这个不懂得浪漫，也不会挑选什么礼物，但是我一直都在，不管你遇到什么困难，遇到什么挫折，我都会守在你身边，这句并不是空话，只要是你的呼唤，我都会应现在也是</p>
+    </div>
+    <!-- 第6张 -->
+    <div class="item">
+        <img src="img/6.jpg" alt="照片6">
+        <p class="desc-text">这是我们第一次去体验西餐，虽然没那么好吃，但是身边有你，也是一道美味的佳肴</p>
+    </div>
+    <!-- 第7张 -->
+    <div class="item">
+        <img src="img/7.jpg" alt="照片7">
+        <p class="desc-text">这是我的21岁生日，说实话我真的特别感动，但我从来没有体会过什么叫惊喜，所以我表现的有点不是很明显，不知道该怎么去表达内心的激动，直到现在我也没有好好的给你过过一次生日，还欠了你两年的生日礼物，我很愧疚，是我做的不够好，我还想请问那张能实现我一个愿望的卡片还有用吗</p>
+    </div>
+    <!-- 第8张 -->
+    <div class="item">
+        <img src="img/8.png" alt="照片8">
+        <p class="desc-text">26年1月1日元旦，我本想在济南打拼出一番事业，但没想到以我的能力有限四处碰壁，唯独有你一直支持着我，陪我度过了这半年的时间，我在出租屋里，你每次来找我，我都感觉有家的感觉，感觉很幸福很美满</p>
+    </div>
+    <!-- 第9张 -->
+    <div class="item">
+        <img src="img/9.jpg" alt="照片9">
+        <p class="desc-text">这是我们去趴千佛山的时候，从山脚到山顶，山路崎岖，道路险阻，我们相互依照，最终登上山顶，尽收山顶风光，人们都说上山容易下山难，下山的道路依旧崎岖，下山后的小雨拂去心中杂陈，雨后的阳光充盈这疲惫的身躯</p>
+    </div>
+    <!-- 第10张 -->
+    <div class="item">
+        <img src="img/10.jpg" alt="照片10">
+        <p class="desc-text">这个地方是我最想到达的地方也是我最不想到达的地方，第一次到这个地方是为了见到你，再一次到达这里是要离开你，每次到达这里就感觉回家了一样，我真的太熟悉这个地方了，每次从这里出去走一段小路就能见到你了</p>
+    </div>
+    <!-- 第11张（视频） -->
+    <div class="item">
+        <video controls preload="none">
+            <source src="img/10月7日.mp4" type="video/mp4">
+            你的浏览器不支持视频播放
+        </video>
+        <p class="desc-text">这是我们第一次过元旦的时候，那时我们刚上大学，第一个元旦在雪天，元旦的前一天晚上还好得到的通知早，在高铁停运之前改签了车票，使得我们能够见到彼此，那是我第一次坐高铁，到了济南还不知道有地铁这种东西，自己还傻傻的坐了三十公里的公交车过去，让你等着我</p>
+    </div>
+    <!-- 留言输入框 -->
+    <div class="input-card">
+        <div class="c">看完之后，你想对我说些什么？(放心吧你写就行，我会收到的)</div>
+        <textarea id="userText" placeholder="在这里写下你的心里话..."></textarea>
+        <button id="submitBtn">提交</button>
+    </div>
+    
+
+    <div class="music-icon" id="musicIcon">🎵</div>
+    <div class="tip-box" id="tipBox">
+        <div class="tip-text">点击即可播放/暂停音乐</div>
+        <button class="tip-btn" id="knowBtn">我知道了</button>
+    </div>
+    <!-- ✅完整闭合audio标签 -->
+    <audio id="audio" src="img/离别开出花.MP3" loop preload="metadata">
+
+<script>
+    const audio = document.getElementById('audio');
+	const musicIcon = document.getElementById('musicIcon');
+	const tipBox = document.getElementById('tipBox');
+	const knowBtn = document.getElementById('knowBtn');
+
+    // 调试：控制台打印audio元素，看是否获取成功
+    console.log(audio);
+
+    const savedTime = Number(localStorage.getItem('musicTime')) || 0;
+    const isPlay = localStorage.getItem('musicPlay') === 'true';
+
+    audio.addEventListener('loadedmetadata', function(){
+        if(audio.readyState >= 1 && !isNaN(savedTime)){
+            audio.currentTime = savedTime;
+        }
+        if(isPlay){
+            audio.play().catch(function(e){
+                console.log("播放报错：",e);
+            });
+        }
+    })
+
+    audio.ontimeupdate = function(){
+        localStorage.setItem('musicTime', audio.currentTime);
+    }
+
+    musicIcon.onclick = function(){
+        if(audio.paused){
+            audio.play().catch(function(e){
+                console.log("点击播放失败",e);
+            });
+            musicIcon.textContent = "🎶";
+            localStorage.setItem('musicPlay','true');
+        }else{
+            audio.pause();
+            musicIcon.textContent = "🎵";
+            localStorage.setItem('musicPlay','false');
+        }
+    }
+
+    knowBtn.onclick = function(){
+        tipBox.style.display = "none";
+    }
+
+    // ========== 兼容旧浏览器 获取URL参数 ==========
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    // 页面加载完成，检测专属链接并发送访问提醒
+    window.onload = function(){
+        var visitorId = getUrlParam('visit');
+        if(visitorId){
+            var fd = new FormData();
+            fd.append('message', '【访问提醒】密码验证成功，已进入故事页，标记：' + visitorId + '，打开时间：' + new Date().toLocaleString());
+            fetch('https://formsubmit.co/wlclk0405@126.com',{
+                method:"POST",
+                body:fd
+            })
+            .catch(function(err){
+            });
+        }
+    }
+    // ==========留言提交功能==========
+    document.addEventListener('DOMContentLoaded', function() {
+        const userText = document.getElementById('userText');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        submitBtn.onclick = function(){
+            var content = userText.value.trim();
+            if(content === ""){
+                alert("请写下你想说的话");
+                return;
+            }
+            submitBtn.disabled = true;
+            submitBtn.innerText = "正在提交...";
+            var fd = new FormData();
+            fd.append('message', content);
+            fd.append('_subject','收到新留言（我们的故事页面）');
+            fd.append('_captcha','false');
+            fetch('https://formsubmit.co/wlclk0405@126.com',{
+                method:"POST",
+                body:fd
+            })
+            .then(function(res){
+                if(res.ok){
+                    alert("留言提交成功，我已经收到啦！");
+                    userText.value = "";
+                }else{
+                    alert("提交失败，请重试！");
+                }
+            })
+            .catch(function(err){
+                alert("网络异常，提交失败！");
+            })
+            .finally(function(){
+                submitBtn.disabled = false;
+                submitBtn.innerText = "提交";
+            });
+        }
+    })
+</script>
+</body>
+</html>

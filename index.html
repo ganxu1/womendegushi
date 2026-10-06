@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>起始页面</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(img/背景.png) no-repeat center center;
+			background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 48px;
+            color: #fff;
+            font-weight: bold;
+            font-family:"微软雅黑";
+            letter-spacing: 15px;
+            margin-bottom: 80px;
+            animation: fadeIn 1.2s ease-in-out 0.3s backwards;
+        }
+        .box{
+            background-color: rgba(255,255,255,0.12);
+            border: none;
+            width: 300px;
+            height: 180px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: fadeIn 1.2s ease-in-out;
+            transition: all 0.3s;
+        }
+        .box:hover{
+            background-color: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+        .start-text{
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family:"微软雅黑";
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?00fb3aa45804a5edd60a4546182fd26f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+    <div class="title">我们的故事</div>
+    <div class="box" id="startBox">
+        <div class="start-text">开始</div>
+    </div>
+    
+<script>
+		// =========在这里设置密码，修改引号内内容即可=========
+		const PASSWORD = "722922";
+		// ===================================================
+
+		// 获取盒子元素
+		const startBox = document.getElementById('startBox');
+		// 点击跳转
+		startBox.onclick = function(){
+    		var inputPwd = prompt("请输入查看密码：");
+            // 点击取消，则不执行
+            if(inputPwd === null){
+                return;
+            }
+            // 判断密码
+            if(inputPwd.trim() === PASSWORD){
+                // 保留url参数，把visit标记传给story.html
+                const searchStr = window.location.search;
+                window.location.href = "story.html" + searchStr;
+            }else{
+                alert("密码错误，请重新输入！");
+            }
+		}
+</script>
+</body>
+</html>
